@@ -1,6 +1,4 @@
-/* ========================================
-   BOOKING PAGE
-======================================== */
+/* BOOKING PAGE */
 
 .booking-container {
   display: flex;
@@ -9,9 +7,7 @@
   padding: 40px 8%;
 }
 
-/* ========================================
-   WELCOME SECTION
-======================================== */
+/* WELCOME SECTION */
 
 .booking-welcome {
   display: flex;
@@ -47,9 +43,7 @@
   border-radius: 8px;
 }
 
-/* ========================================
-   IMAGE CREDIT
-======================================== */
+/* IMAGE CREDIT */
 
 .booking-welcome .image-credit {
   position: relative;
@@ -67,9 +61,7 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* ========================================
-   BOOKING FORM
-======================================== */
+/* BOOKING FORM */
 
 .booking-form {
   flex: 1;
@@ -167,9 +159,7 @@
   outline: none;
 }
 
-/* ========================================
-   SUBMIT BUTTON
-======================================== */
+/* SUBMIT BUTTON */
 
 .booking-button {
   width: fit-content;
@@ -197,9 +187,7 @@
   border-color: var(--light-color);
 }
 
-/* ========================================
-   SUCCESS MESSAGE
-======================================== */
+/* SUCCESS MESSAGE */
 
 .success-message {
   background-color: var(--dark-color);
@@ -214,9 +202,7 @@
   font-family: var(--primary-font);
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 900px) {
   .booking-container {

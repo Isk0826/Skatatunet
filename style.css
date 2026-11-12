@@ -1,6 +1,4 @@
-/* ========================================
-   CSS VARIABLES
-======================================== */
+/* CSS VARIABLES */
 
 :root {
   /* Colors */
@@ -34,9 +32,7 @@
   --curly-font: "Carattere", cursive;
 }
 
-/* ========================================
-   GENERAL STYLING
-======================================== */
+/* GENERAL STYLING */
 
 * {
   box-sizing: border-box;
@@ -361,9 +357,7 @@ nav ul li a:hover::after {
   border-color: var(--light-color);
 }
 
-/* ========================================
-   CUSTOMER EXPERIENCES
-======================================== */
+/* KUNDEOPPLEVELSER */
 
 .kundeopplevelser {
   padding: 80px 10px;
@@ -378,9 +372,7 @@ nav ul li a:hover::after {
   margin: 60px 0;
 }
 
-/* ========================================
-   FOOTER
-======================================== */
+/* FOOTER */
 
 .footer {
   padding: 25px 15px;
@@ -456,9 +448,7 @@ nav ul li a:hover::after {
   gap: 12px;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
+/* RESPONSIVT DESIGN */
 
 @media (max-width: 900px) {
   .tjenester-row {
