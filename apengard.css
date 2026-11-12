@@ -1,0 +1,143 @@
+/* ÅPEN GÅRD */
+
+.apen-gard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px 80px;
+}
+
+/* Tekst */
+
+.apen-gard-tekst {
+  flex: 1;
+}
+
+.apen-gard-tekst h2 {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.apen-gard-tekst p {
+  font-family: var(--primary-font);
+  font-size: var(--text-medium);
+  color: var(--white-color);
+  line-height: 1.4;
+  gap: 30px;
+  margin: 40px;
+}
+
+.apen-gard-tekst .pris {
+  font-weight: bold;
+  text-align: center;
+  margin: 50px;
+}
+
+/* Hovedbilde */
+
+.apen-gard-bilde {
+  position: relative;
+  flex: 0 0 32%;
+  max-height: 520px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.apen-gard-bilde img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* BILDEGALLERI */
+
+.gard-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.gallery-image {
+  position: relative;
+  max-height: 320px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bildekreditering */
+
+.apen-gard-bilde span,
+.gallery-image span {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  color: white;
+  font-size: 11px;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* RESPONSIVT DESIGN */
+
+@media (max-width: 768px) {
+  .apen-gard {
+    gap: 25px;
+    padding: 30px 5%;
+  }
+
+  .apen-gard-bilde {
+    flex-basis: 35%;
+    height: 350px;
+  }
+
+  .gard-gallery {
+    gap: 15px;
+  }
+
+  .gallery-image {
+    height: 140px;
+  }
+}
+
+@media (max-width: 550px) {
+  .apen-gard {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .apen-gard-bilde {
+    width: 100%;
+    height: 300px;
+  }
+
+  .gard-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-image {
+    height: 220px;
+  }
+
+  .apen-gard-tekst .pris {
+    margin: 20px;
+  }
+}
