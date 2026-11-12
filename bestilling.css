@@ -1,0 +1,255 @@
+/* ========================================
+   BOOKING PAGE
+======================================== */
+
+.booking-container {
+  display: flex;
+  align-items: stretch;
+  gap: 4%;
+  padding: 40px 8%;
+}
+
+/* ========================================
+   WELCOME SECTION
+======================================== */
+
+.booking-welcome {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-start;
+  min-width: 0;
+  gap: var(--space-medium);
+
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 20px;
+
+  text-align: left;
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  font-size: var(--text-medium);
+  line-height: 1.5;
+}
+
+.booking-welcome h2 {
+  text-align: center;
+}
+
+.booking-welcome p {
+  margin: 0;
+}
+
+.booking-welcome img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ========================================
+   IMAGE CREDIT
+======================================== */
+
+.booking-welcome .image-credit {
+  position: relative;
+  width: 100%;
+}
+
+.booking-welcome .image-credit span {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  color: var(--white-color);
+  font-family: var(--primary-font);
+  font-size: 11px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* ========================================
+   BOOKING FORM
+======================================== */
+
+.booking-form {
+  flex: 1;
+  min-width: 0;
+
+  background-color: #fffbef;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+.booking-form h2 {
+  text-align: center;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+/* Labels */
+
+.booking-form label {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+}
+
+/* Input fields */
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+
+  background-color: #fffbef;
+  color: var(--text-color);
+  opacity: 1;
+
+  border: 1px solid var(--card-color);
+  border-radius: 8px;
+
+  font-family: var(--primary-font);
+  font-size: var(--text-base);
+  resize: none;
+}
+
+/* Placeholder text */
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.4;
+  font-family: var(--primary-font);
+  font-size: var(--text-small);
+}
+
+/* Select menu */
+
+.booking-form select {
+  cursor: pointer;
+}
+
+.booking-form select:invalid {
+  color: #bfc3c9;
+}
+
+.booking-form select option {
+  color: var(--text-color);
+  background-color: #fffbef;
+}
+
+/* Date field */
+
+.booking-form input[type="date"] {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+.booking-form input[type="date"]:invalid::-webkit-datetime-edit {
+  color: #bfc3c9;
+}
+
+.booking-form input[type="date"]:valid::-webkit-datetime-edit {
+  color: var(--text-color);
+}
+
+/* Focus effect */
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border: 1.5px solid var(--primary-color);
+  outline: none;
+}
+
+/* ========================================
+   SUBMIT BUTTON
+======================================== */
+
+.booking-button {
+  width: fit-content;
+  align-self: center;
+
+  padding: 12px 20px;
+  margin-top: 10px;
+
+  background-color: var(--light-color);
+  color: var(--text-color);
+
+  font-family: var(--primary-font);
+  font-size: var(--text-medium);
+
+  border: 1px solid transparent;
+  border-radius: 15px;
+
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.booking-button:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  border-color: var(--light-color);
+}
+
+/* ========================================
+   SUCCESS MESSAGE
+======================================== */
+
+.success-message {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+
+  border-radius: 8px;
+  text-align: center;
+
+  font-family: var(--primary-font);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 900px) {
+  .booking-container {
+    gap: 20px;
+    padding: 30px 5%;
+  }
+
+  .booking-welcome,
+  .booking-form {
+    padding: 20px;
+  }
+
+  .booking-welcome img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 650px) {
+  .booking-container {
+    flex-direction: column;
+    padding: 25px 5%;
+  }
+
+  .booking-welcome,
+  .booking-form {
+    width: 100%;
+  }
+
+  .booking-welcome img {
+    height: 250px;
+  }
+
+  .booking-form {
+    padding: 20px;
+  }
+}
