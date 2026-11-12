@@ -1,0 +1,136 @@
+/* OVERNATTING */
+
+.overnatting {
+  padding: 30px 20px 40px;
+}
+
+/* TEKST */
+
+.overnatting-tekst {
+  margin: 0 auto 45px;
+  max-width: fit-content;
+}
+
+.overnatting-tekst h2 {
+  font-family: var(--h-font);
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.overnatting-tekst p {
+  font-family: var(--primary-font);
+  font-size: var(--text-medium);
+  color: var(--white-color);
+
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.overnatting-tekst .airbnb-link {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.airbnb-link a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.airbnb-link a:hover {
+  text-decoration: underline;
+}
+
+/* HOVEDBILDE */
+
+.overnatting-hovedbilde {
+  position: relative;
+  max-width: 930px;
+  margin: 0 auto 50px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.overnatting-hovedbilde img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BILDEGALLERI */
+
+.overnatting-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.overnatting-bilde {
+  position: relative;
+  height: 195px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.overnatting-bilde img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BILDEKREDITERING */
+
+.overnatting-hovedbilde span,
+.overnatting-bilde span {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  color: white;
+  font-size: 11px;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* RESPONSIVT DESIGN */
+
+@media (max-width: 768px) {
+  .overnatting {
+    padding: 30px 5%;
+  }
+
+  .overnatting-hovedbilde {
+    height: 280px;
+  }
+
+  .overnatting-gallery {
+    gap: 15px;
+  }
+
+  .overnatting-bilde {
+    height: 170px;
+  }
+}
+
+@media (max-width: 550px) {
+  .overnatting-tekst {
+    margin-bottom: 30px;
+  }
+
+  .overnatting-hovedbilde {
+    height: 240px;
+    margin-bottom: 30px;
+  }
+
+  .overnatting-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .overnatting-bilde {
+    height: 220px;
+  }
+}
