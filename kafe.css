@@ -1,0 +1,133 @@
+/* KAFÉ */
+
+.kafe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px 80px;
+}
+
+/* TEKST */
+
+.kafe-tekst {
+  flex: 1;
+}
+
+.kafe-tekst h2 {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.kafe-tekst p {
+  font-family: var(--primary-font);
+  font-size: var(--text-medium);
+  color: var(--white-color);
+  line-height: 1.4;
+  gap: 30px;
+  margin: 40px;
+}
+
+.kafe-meny {
+  font-family: var(--primary-font);
+  font-size: var(--text-medium);
+  color: var(--white-color);
+  line-height: 1.6;
+  padding-left: 60px;
+}
+
+/* HOVEDBILDE */
+
+.kafe-bilde {
+  position: relative;
+  flex: 0 0 32%;
+  max-height: 700px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.kafe-bilde img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BILDEGALLERI */
+
+.kafe-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+  padding: 40px;
+}
+
+.kafe-gallery-image {
+  position: relative;
+  max-height: 310px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.kafe-gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BILDEKREDITERING */
+
+.kafe-bilde span,
+.kafe-gallery-image span {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  color: white;
+  font-size: 11px;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* RESPONSIVT DESIGN */
+
+@media (max-width: 768px) {
+  .kafe {
+    gap: 25px;
+    padding: 30px 5%;
+  }
+
+  .kafe-bilde {
+    flex-basis: 35%;
+    height: 280px;
+  }
+
+  .kafe-gallery {
+    gap: 15px;
+  }
+
+  .kafe-gallery-image {
+    height: 140px;
+  }
+}
+
+@media (max-width: 550px) {
+  .kafe {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .kafe-bilde {
+    width: 100%;
+    height: 300px;
+  }
+
+  .kafe-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .kafe-gallery-image {
+    height: 220px;
+  }
+}
